@@ -1,0 +1,41 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(198, 220, 232, 0.546);
+    display: grid;
+}
+
+header {
+    color: black;
+    padding: 1rem;
+    display: grid;
+    align-items: center;
+}
+
+.header-content {
+    font-size: 1.3rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: left;
+    gap: 10px;
+}
+
+nav ul li {
+    margin: 10px;
+    padding: 0;
+}
+
+nav ul li a {
+    color: rgb(31, 100, 202);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    color: rgb(90, 86, 86);
+    font-size: 15px;
+    text-align: center;
+    padding: 1.2rem;
+}
