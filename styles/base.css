@@ -1,0 +1,106 @@
+body {
+    font-family: "Fira Sans", serif;
+    font-weight: 400;
+    background-color: rgba(198, 220, 232, 0.546);
+    display: grid;
+}
+
+header {
+    color: black;
+    padding: 1rem;
+    display: grid;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+nav {
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: rgb(44, 44, 205);
+    font-weight: 500;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+
+.card {
+background-color: white;
+padding: 30px;
+box-shadow: 0 2px 8px;
+border-radius: 5px;
+text-align: center;
+}
+
+.card h2 {
+    font-size: 2rem;
+    color: rgb(62, 62, 62);
+}
+
+.card p {
+    font-size: 17px;
+    line-height: 1.5;
+    color: rgb(44, 42, 42);
+}
+
+.card img {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+footer {
+    background-color: whitesmoke;
+    color: rgb(106, 103, 103);
+    padding: 5px;
+    text-align: center;
+}
+
+footer p {
+    margin: 7px 0;
+}
+
+
+
+
+
