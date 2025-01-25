@@ -1,0 +1,25 @@
+/* large style */
+:root {
+    --primary-color:white;
+    --second-color:red;
+    font-family: "Pacifico", serif;
+    font-size: 1.5rem;
+}
+
+body {
+    font-family: var(font-family);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: black;/*after change to primary color*/
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.picture {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
