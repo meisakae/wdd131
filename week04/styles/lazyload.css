@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+}
+
+main {
+    margin: 0;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    background-color: rgba(237, 191, 199, 0.756);
+    animation: backwards 7s;
+}
+
+@keyframes backwards {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
