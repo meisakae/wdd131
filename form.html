@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Mei sakae | Form Submission</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundametals - Mei Sakae - Product Review Form">
+    <meta name="author" content="Mei Sakae">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html">
+            <fieldset>
+             <legend>Product Name</legend>
+             <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product</option>
+                <option value="capacity">Flux Capacitor</option>
+                <option value="laces">Power Laces</option>
+                <option value="circuits">Time Circuits</option>
+                <option value="reactor">Low Voltage Reactor</option>
+                <option value="Equalizer">Warp Equalizer</option>
+             </select>
+            </fieldset>
+
+            <fieldset>            
+             <legend>Overall Rating</legend>
+                <label><input type="radio" id="onestar" name="stars" value="1" required>&star;</label>
+                <label><input type="radio" id="twostar" name="stars" value="2" required>&star;&star;</label>
+                <label><input type="radio" id="threestar" name="stars" value="3" required>&star;&star;&star;</label>
+                <label><input type="radio" id="fourstar" name="stars" value="4" required>&star;&star;&star;&star;</label>
+                <label><input type="radio" id="fivestar" name="stars" value="5" required>&star;&star;&star;&star;&star;</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Data of installation</legend>
+                <input type="date" id="installation" name="installation" required>
+            </fieldset>
+
+            <div class="feature">
+            <fieldset>
+                    <legend>Which features did you find useful in the product?</legend>
+                    <p>(Check all that apply)</p>
+                    <label><input type="checkbox" id="feature1" name="feature1" value="durability">Durability</label>
+                    <label><input type="checkbox" id="feature2" name="feature2" value="ease">Ease of Use</label>
+                    <label><input type="checkbox" id="feature3" name="feature3" value="performance">Performance</label>
+                    <label><input type="checkbox" id="feature4" name="feature4" value="design">Design</label>
+            </fieldset>
+            </div>
+
+            <fieldset>
+                <legend>Written Review(Optional)</legend>
+                <textarea id="review" name="review"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Name(Optional)</legend>
+                <label><input type="text" id="username" name="username"></label>
+            </fieldset>
+
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>
+            &copy;
+            <span id="current-year">2025</span>
+            🍃Mei Sakae - Japan 🍃
+        </p>
+        <p>
+            Date Last Modified:
+            <span id="last-Modified"></span>
+        </p>
+    </footer>
+</body>
+</html>
