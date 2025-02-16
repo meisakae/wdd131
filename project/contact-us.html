@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Mei Sakae | final project</title>
+    <meta name="description" content="This is my own design and development project">
+    <meta name="author" content="Mei Sakae">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/siteplan.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav id="siteplan">
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="siteplan.html">Home</a></li>
+                <li><a href="Japan.html">Japan</a></li>
+                <li><a href="trip-plans.html">Trip Plans</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="information">
+                <h3>Company Profile</h3>
+                <p>🏢Company name: Trip of Japan</p>
+                <p>📍Address: Tokyo, Japan</p>
+                <p>☎️Phone: 086-125-789</p>
+                <p>✉️Email: tripofjapan@gmail.com</p>          
+            </div>
+        </section>
+
+
+        <form id="myform" method="post" action="submit.html">
+            <fieldset>
+                <legend>Your Infomation</legend>
+                <label>First Name* <input type="text" name="fname" id="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" id="lname" required></label>
+                <label>Data of birth<input type="date" id="installation" name="installation" required></label>
+                <label>Phone <input type="tel" name="phone" id="phone" placeholder="1234567891"></label>
+                <label>Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Chose Your Plan</legend>
+                <select id="plan" name="plan" required>
+                    <option value="" disabled selected>Select a plan</option>
+                    <option value="plan1">Plan1: ✈️Hokkaido✈️</option>
+                    <option value="plan2">Plan2: ✈️Tokyo✈️</option>
+                    <option value="plan3">Plan3: ✈️Kyoto✈️</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>What was the source of the travel plans?</legend>
+                <p>(Check all that apply)</p>
+                <label><input type="checkbox" id="source1" name="source1" value="website">Our company website</label>
+                <label><input type="checkbox" id="source2" name="source2" value="Youtube">Youtube ads</label>
+                <label><input type="checkbox" id="source3" name="source3" value="friend">From friends or acquaintance</label>
+                <label><input type="checkbox" id="source4" name="source4" value="Other">Other</label>
+            </fieldset>
+        </form>
+        <input type="submit" value="Submit Your Trip">
+    </main>
+    <footer>
+        <p>
+            &copy;
+            <span id="current-year">2025</span>
+            🍃Mei Sakae - Japan 🍃
+        </p>
+        <p>
+            Date Last Modified:
+            <span id="last-Modified"></span>
+        </p>
+    </footer>
+</body>
+</html>

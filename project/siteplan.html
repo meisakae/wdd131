@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 | Mei Sakae | My Project</title>
-    <meta class="discription" content="This is website plan for next week final project">
-    <meta class="Author" content="Mei Sakae">
+    <meta name="description" content="This is my own design and development project">
+    <meta name="author" content="Mei Sakae">
     <link rel="stylesheet" href="styles/siteplan.css">
     <script src="scripts/siteplan.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,22 +14,37 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#" id="home">Home</a></li>
-                <li><a href="#" id="home">Japan</a></li>
-                <li><a href="#" id="home">Trip plans</a></li>
-                <li><a href="#" id="contact">contact Us</a></li>
+        <h1>Trip of Japan</h1>
+        <nav id="siteplan">
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="siteplan.html">Home</a></li>
+                <li><a href="Japan.html">Japan</a></li>
+                <li><a href="trip-plans.html">Trip Plans</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Trip of Japan</h1>
-        <p>~ Welcome to Japan ~</p>
-        <img src="" alt="cover photo of Japan" loading="lazy">
+        <div class="home-slide">
+            <div class="slides">
+                <div class="slide"><img src="images/home1.webp" alt="home1" loading="lazy"></div>
+                <div class="slide"><img src="images/home2.webp" alt="home2" loading="lazy"></div>
+                <div class="slide"><img src="images/home3.webp" alt="home3" loading="lazy"></div>
+                <div class="slide"><img src="images/home5.webp" alt="home5" loading="lazy"></div>
+            </div>
+        </div>
     </main>
     <footer>
-        Mei Sakae
+        <p>
+            &copy;
+            <span id="current-year">2025</span>
+            🍃Mei Sakae - Japan 🍃
+        </p>
+        <p>
+            Date Last Modified:
+            <span id="last-Modified"></span>
+        </p>
     </footer>
 </body>
 </html>

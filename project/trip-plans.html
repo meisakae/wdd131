@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Mei Sakae | final project</title>
+    <meta name="description" content="This is my own design and development project">
+    <meta name="author" content="Mei Sakae">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/siteplan.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Our Trip Plans</h1>
+        <nav id="siteplan">
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="siteplan.html">Home</a></li>
+                <li><a href="Japan.html">Japan</a></li>
+                <li><a href="trip-plans.html">Trip Plans</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="trips">
+         <div class="trip1">
+            <h2>✈️Hokkaido✈️</h2>
+            <div class="hokkaido"><img src="images/hokkaido1.webp" alt="hokkaido" loading="lazy" id="hokkaido1" onclick="changeImage('hokkaido', 1)" width="300px" height="250px"></div>
+            <p>
+                <span>Place: </span>
+                "Furano, Hokkaido"
+            </p>
+            <p>
+                <span>Trip duration: </span>
+                "3 days"
+            </p>
+            <p>
+                <span>Tour package: </span>
+                "$300"
+            </p>
+            <p>
+                <span>Schedule:</span>
+                "Farm Tomita"
+                <p>"Eat Sushi"</p>
+                <p>"hot spring"</p>
+            </p>     
+         </div>
+
+         <div class="trip2">
+            <h2>✈️Tokyo✈️</h2>
+            <div class="tokyo"><img src="images/tokyo1.webp" alt="tokyo" loading="lazy" id="tokyo1" onclick="changeImage('tokyo', 1)" width="300px" height="250px"></div>
+            <p>
+                <span>Place: </span>
+                "Asakusa, Tokyo"
+            </p>
+            <p>
+                <span>Trip duration: </span>
+                "2 days"
+            </p>
+            <p>
+                <span>Tour package: </span>
+                "$250"
+            </p>
+            <p>
+                <span>Schedule:</span>
+                "Senso-ji Temple"
+                <p>"Try wearing Kimono"</p>
+                <p>"Making Japanese sweets"</p>
+            </p>
+         </div>
+
+         <div class="trip3">
+            <h2>✈️Kyoto✈️</h2>
+            <div class="kyoto"><img src="images/kyoto1.webp" alt="kyoto" loading="lazy" id="kyoto1" onclick="changeImage('kyoto', 1)" width="300px" height="250px"></div>
+            <p>
+                <span>Place: </span>
+                "Kyoto"
+            </p>
+            <p>
+                <span>Trip duration: </span>
+                "2 days"
+            </p>
+            <p>
+                <span>Tour package: </span>
+                "$200"
+            </p>
+            <p>
+                <span>Schedule:</span>
+                "Kiyomizu-dera"
+                <p>"Kinkaku-ji"</p>
+                <p>"Eat yuba"</p>
+            </p>
+         </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy;
+            <span id="current-year">2025</span>
+            🍃Mei Sakae - Japan 🍃
+        </p>
+        <p>
+            Date Last Modified:
+            <span id="last-Modified"></span>
+        </p>
+    </footer>
+</body>
+</html>
